@@ -8,7 +8,7 @@ Version:	4.7.1
 Release:	1%{?dist}
 Summary:	Mattermost Desktop application for Linux
 # aarch64 not supported
-BuildArch:	x86_64
+ExclusiveArch:	x86_64
 
 License:	ASL 2.0
 URL:		https://about.mattermost.com
