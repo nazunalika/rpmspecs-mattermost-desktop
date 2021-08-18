@@ -23,7 +23,6 @@ BuildRequires:	git
 Requires:	gtk2
 Requires:	libXtst
 Requires:	libXScrnSaver
-Requires:	gconf-editor
 Requires:	nss
 Requires:	nspr
 Requires:	alsa-lib
