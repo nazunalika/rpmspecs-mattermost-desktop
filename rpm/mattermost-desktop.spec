@@ -21,6 +21,7 @@ BuildRequires:	libGL.so.1
 BuildRequires:	libXi
 BuildRequires:	git
 BuildRequires:  python3
+BuildRequires:  libX11-devel
 Requires:	gtk2
 Requires:	libXtst
 Requires:	libXScrnSaver
