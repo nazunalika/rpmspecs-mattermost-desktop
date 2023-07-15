@@ -20,6 +20,7 @@ BuildRequires:	gcc-c++
 BuildRequires:	libGL.so.1
 BuildRequires:	libXi
 BuildRequires:	git
+BuildRequires:  python3
 Requires:	gtk2
 Requires:	libXtst
 Requires:	libXScrnSaver
