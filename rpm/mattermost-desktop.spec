@@ -22,6 +22,7 @@ BuildRequires:	libXi
 BuildRequires:	git
 BuildRequires:  python3
 BuildRequires:  libX11-devel
+BuildRequires:  libXtst-devel
 Requires:	gtk2
 Requires:	libXtst
 Requires:	libXScrnSaver
