@@ -4,7 +4,7 @@
 %define releasedir linux-unpacked
 
 Name:		mattermost-desktop
-Version:	4.7.1
+Version:	5.4.0
 Release:	1%{?dist}
 Summary:	Mattermost Desktop application for Linux
 # aarch64 not supported
@@ -93,5 +93,8 @@ ln -s %{_libdir}/%{name}/%{name} $RPM_BUILD_ROOT/%{_bindir}/%{name}
 %{_datadir}/pixmaps/%{name}.svg
 
 %changelog
+* Sat Jul 15 2023 Louis Abel <tucklesepk@gmail.com> - 5.4.0-1
+- Update to 5.4.0
+
 * Tue Aug 17 2021 Louis Abel <tucklesepk@gmail.com> - 4.7.1-1
 - Initial release
