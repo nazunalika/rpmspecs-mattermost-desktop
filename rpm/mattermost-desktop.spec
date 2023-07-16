@@ -13,6 +13,7 @@ ExclusiveArch:	x86_64
 License:	ASL 2.0
 URL:		https://about.mattermost.com
 Source0:	https://github.com/mattermost/desktop/archive/v%{version}.tar.gz
+Source1:  https://worldvectorlogo.com/download/mattermost-2.svg
 
 BuildRequires:	npm
 BuildRequires:	nodejs
@@ -23,6 +24,9 @@ BuildRequires:	git
 BuildRequires:  python3
 BuildRequires:  libX11-devel
 BuildRequires:  libXtst-devel
+BuildRequires:  libpng-devel
+BuildRequires:  libxcrypt-compat
+BuildRequires:  zlib-devel
 Requires:	gtk2
 Requires:	libXtst
 Requires:	libXScrnSaver
@@ -48,6 +52,7 @@ sed -i -e '/^[[:space:]]*"target": \[/!b' -e '$!N;s/\n[[:space:]]*"tar.gz",//' e
 sed -i -e '/^[[:space:]]*"target": \[/!b' -e '$!N;s/\n[[:space:]]*"appimage",//' electron-builder.json
 sed -i -e '/^[[:space:]]*"target": \[/!b' -e '$!N;s/\n[[:space:]]*"rpm"//' electron-builder.json
 sed -i 's/--ia32//g' package.json
+cp %{SOURCE1} src/assets/linux/icon.svg
 
 # There's some things that we need to turn off or fixed
 sed -i -e "s/git rev-parse --short HEAD/echo %{version}/" webpack.config.base.js
